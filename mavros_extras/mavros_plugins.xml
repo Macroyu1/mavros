@@ -96,4 +96,10 @@
   <class name="guided_target" type="mavros::extra_plugins::GuidedTargetPlugin" base_class_type="mavros::plugin::PluginBase">
      <description>Send guided target.</description>
 </class>
+<class name="act_opt" type="mavros::extra_plugins::ActuatorOptimPlugin" base_class_type="mavros::plugin::PluginBase">
+     <description>ActuatorOptimPlugin.</description>
+</class>
+<class name="opt_result" type="mavros::extra_plugins::OptimResultPlugin" base_class_type="mavros::plugin::PluginBase">
+     <description>ActuatorOptimResultPlugin.</description>
+</class>
 </library>

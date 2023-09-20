@@ -8,6 +8,7 @@ include_directories(include)
 add_message_files(
   DIRECTORY msg
   FILES
+  ActuatorOptim.msg
   ADSBVehicle.msg
   ActuatorControl.msg
   Altitude.msg

@@ -37,7 +37,8 @@ include(MavrosMavlink)
 ## See http://ros.org/doc/api/catkin/html/user_guide/setup_dot_py.html
 # catkin_python_setup()
 
-
+###############################
+add_subdirectory(fmincon)
 
 ###################################
 ## catkin specific configuration ##
@@ -98,6 +99,8 @@ add_library(mavros_extras
   src/plugins/vision_speed_estimate.cpp
   src/plugins/wheel_odometry.cpp
   src/plugins/guided_target.cpp
+  src/plugins/act_opt.cpp
+  src/plugins/opt_result.cpp
 )
 add_dependencies(mavros_extras
   ${catkin_EXPORTED_TARGETS}
@@ -106,7 +109,6 @@ target_link_libraries(mavros_extras
   ${mavros_LIBRARIES}
   ${catkin_LIBRARIES}
 )
-
 ## Declare a cpp executable
 add_executable(visualization
   src/visualization.cpp
